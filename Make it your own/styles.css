@@ -1,0 +1,49 @@
+body {
+    margin: 20px;
+ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.avatar{
+    width: 150px;
+}
+
+.card {
+    width: 400px;
+    margin: 0 auto;
+    /* margin-left: auto;
+    margin-right: auto; */
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    color: #2b2839;
+    background: #a5ffd6;
+    border: 10px solid #dd847b;
+    border-top: 5px solid #ffa69e;
+    border-bottom: 5px solid #ffa69e;
+    box-shadow: -2px 3px 5px 10px #2f2d30;   
+}
+
+.border{
+    border: 1px dotted blue;
+}
+
+.card::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    height: Opx;
+    width: Opx;
+    color: red;
+    transition: all 2s;
+    }
+
+    .card:hover::before{
+    top: 100%;
+    }
+    .card:hover, .card:focus {
+    box-shadow: 10px 10px 40px 5px black;
+    color: black;
+    }
+    
